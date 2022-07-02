@@ -95,7 +95,7 @@
 .bd-link-with-arrow,
 .bd-navbar-contacts ul,
 .bd-offcanvas-menu__copyright,
-.bd-offcanvas-menu__locales a,
+.bd-offcanvas-menu__locales span,
 .bd-project-showcase
   .bd-project-showcase__items
   .bd-project-showcase__item__category,
@@ -892,15 +892,15 @@ textarea:focus::-webkit-input-placeholder {
 .bd-offcanvas-menu__header .bd-menu-burger:hover {
   color: #fff;
 }
-.bd-offcanvas-menu__locales a {
+.bd-offcanvas-menu__locales span {
   display: inline-block;
 }
-.bd-offcanvas-menu__locales a + a {
+.bd-offcanvas-menu__locales span {
   margin-left: 1.25rem;
 }
-.bd-offcanvas-menu__locales a.active,
-.bd-offcanvas-menu__locales a:hover {
-  color: var(--p1);
+.bd-offcanvas-menu__locales span.active,
+.bd-offcanvas-menu__locales span:hover {
+  color: var(--p1)!important;
 }
 .bd-offcanvas-menu__navigation {
   overflow-y: auto;

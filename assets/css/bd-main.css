@@ -142,7 +142,7 @@
 
 .bd-display-1,
 .bd-navbar-contacts ul,
-.bd-offcanvas-menu__locales a,
+.bd-offcanvas-menu__locales span,
 .bd-offcanvas-menu__copyright,
 .bd-footer-copyright,
 .bd-custom-cursor .circle span,
@@ -1259,16 +1259,16 @@ select:focus::-webkit-input-placeholder
 {
     color: #fff;
 }
-.bd-offcanvas-menu__locales a
+.bd-offcanvas-menu__locales span
 {
     display: inline-block;
 }
-.bd-offcanvas-menu__locales a + a
+.bd-offcanvas-menu__locales span + a
 {
     margin-left: 1.25rem;
 }
-.bd-offcanvas-menu__locales a:hover,
-.bd-offcanvas-menu__locales a.active
+.bd-offcanvas-menu__locales span:hover,
+.bd-offcanvas-menu__locales span.active
 {
     color: var(--p1);
 }
