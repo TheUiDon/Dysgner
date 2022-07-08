@@ -3,10 +3,78 @@
 
 <head>
 	<meta charset="utf-8" />
-	<title>Idris Portfolio</title>
-	<meta name="description" content="Modern &amp; Creative CV/Resume HTML5 Template" />
+	<title>Idris Design | UI Engineer</title>
+	<meta name="description" content="Idris Design - I am a Ui Engineer I design web project not only design functional web projects, but I can test those designs, code View Path in MVC Frontend Developerment" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+	
+	<meta name="keywords" content="website, design, top, rated, designer, website, best, united Kingdom, Ui Engineer, User, Interface, Experience, Figma, Web Design, hiring, recruting, freelance, ">
+	<meta name="author" content="Biade Studio">
+	<meta name="publisher" content="Biade Studio">
+	<meta name="copyright" content="Biade Studio">
+	<meta name="page-topic" content="">
+	<meta name="page-type" content="Personal">
+	<meta name="audience" content="Everyone">
+	<meta name="robots" content="index, follow">
+	<meta name="googlebot" content="index,follow">
+	<meta name="google" content="translate">
+
+	
+	
+	<!--  Essential META Tags -->
+	<meta property="og:title" content="Idris Design | UI Engineer">
+	<meta property="og:type" content="website" />
+	<meta property="og:image" content="assets/img/meta-pic.png">
+	<meta property="og:url" content="index.html">
+	<meta name="twitter:card" content="summary_large_image">
+
+	<!--  Non-Essential, But Recommended -->
+	<meta property="og:description" content="Idris Design - I am a Ui Engineer I design web project not only design functional web projects, but I can test those designs, code View Path in MVC Frontend Developerment">
+	<meta property="og:site_name" content="Idris Design | UI Engineer">
+	<meta name="twitter:image:alt" content="Meta Pic">
+
+	<!--  Non-Essential, But Required for Analytics -->
+	<meta property="fb:app_id" content="your_app_id" />
+	<meta name="twitter:site" content="@website-username">
+
+	<!-- Facebook Meta tag -->
+	<meta property="fb:app_id" content="123456789">
+	<meta property="og:url" content="index.html">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="Idris Design | UI Engineer">
+	<meta property="og:image" content="assets/img/meta-pic.png">
+	<meta property="og:image:alt" content="Idris Design">
+	<meta property="og:description" content="Idris Design - I am a Ui Engineer I design web project not only design functional web projects, but I can test those designs, code View Path in MVC Frontend Developerment">
+	<meta property="og:site_name" content="Idris Design | UI Engineer">
+	<meta property="og:locale" content="en_US">
+	<meta property="article:author" content="Biade_studio">
+
+	<!-- Twitter Meta Tag -->
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:site" content="@site_account">
+	<meta name="twitter:creator" content="@individual_account">
+	<meta name="twitter:url" content="https://example.com/page.html">
+	<meta name="twitter:title" content="Content Title">
+	<meta name="twitter:description" content="Idris Design - I am a Ui Engineer I design web project not only design functional web projects, but I can test those designs, code View Path in MVC Frontend Developerment">
+	<meta name="twitter:image" content="assets/img/meta-pic.png">
+	<meta name="twitter:image:alt" content="Idris Design">
+
+	<!-- Theme Color -->
+	<meta name="theme-color" content="#000000">
+
+	<link rel="me" href="biadedigital.com" type="text/html">
+	<link rel="me" href="mailto:contact@biadedigital.com">
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-JETWTQRRCX"></script>
+	<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+
+	gtag('config', 'G-JETWTQRRCX');
+	</script>
+
 	<!--Favicon-->
 	<link rel="icon" type="image/png" href="assets/img/root/plcs1.jpg" />
 	<!--Framework-->
@@ -1562,7 +1630,7 @@
 											<span class="has-first-color">let's create something iconic together!</span>
 										</h5>
 										<div class="bd-gap-40"></div>
-										<form class="bd-contact-form" novalidate="novalidate">
+										<form class="bd-contact-form" novalidate="novalidate" onsubmit="sendForm(); reset(); return false;">
 											<div class="bd-form-row two-col">
 												<div class="bd-form-group">
 													<label class="has-white-color" for="name">Your name
@@ -1601,11 +1669,11 @@
 												<textarea name="message" id="message" rows="3"
 													placeholder="Message"></textarea>
 											</div>
-											<div class="message success">
-												Your message is successfully sent...
+											<div class="message success" id="success">
+												
 											</div>
-											<div class="message danger">
-												Sorry something went wrong!
+											<div class="message danger" id="danger">
+												
 											</div>
 											<!--Button-->
 											<button class="bd-btn bd-btn--primary">
@@ -1653,6 +1721,8 @@
 	<script src="assets/scripts/bd-helpers.js"></script>
 	<script src="assets/scripts/bd-controllers.min.js"></script>
 
+	<script src="assets/scripts/smtp.js"></script>
+	<script src="assets/scripts/mail.js"></script>
 	
 </body>
 
