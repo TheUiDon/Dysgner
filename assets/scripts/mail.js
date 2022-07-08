@@ -18,6 +18,7 @@ function sendForm() {
         "<br> budget: " + document.getElementById("budget").value +
         "<br> message: " + document.getElementById("message").value 
     }).then(
-    message => success.innerHTML = "Your message is successfully sent..."
+    message => alert('The form is sent successful') ;
+    //success.innerHTML = "Your message is successfully sent...
     );
 };
