@@ -12,13 +12,13 @@ function sendForm() {
         To : 'contact@idris.design',
         From : document.getElementById("email").value,
         Subject : "New Message From Idris Design Website!",
-        Body : "name: " + document.getElementById('name').value +
-        "<br> email: " + document.getElementById("email").value +
-        "<br> category: " + document.getElementById("category").value +
-        "<br> budget: " + document.getElementById("budget").value +
-        "<br> message: " + document.getElementById("message").value 
+        Body : "Name: " + document.getElementById("name").value +
+        "<br> Email: " + document.getElementById("email").value +
+        "<br> Category: " + document.getElementById("category").value +
+        "<br> Budget: " + document.getElementById("budget").value +
+        "<br> Message: " + document.getElementById("message").value 
     }).then(
-    message => alert('The form is sent successful') ;
+    message => alert("The form is sent successful")
     //success.innerHTML = "Your message is successfully sent...
     );
 };
