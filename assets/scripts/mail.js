@@ -21,4 +21,3 @@ function sendForm() {
     message => alert("Your message is successfully sent.")
     );
 };
-
