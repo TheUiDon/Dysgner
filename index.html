@@ -1703,7 +1703,7 @@
 											<span class="has-first-color">let's create something iconic together!</span>
 										</h5>
 										<div class="bd-gap-40"></div>
-										<form class="bd-contact-form" novalidate="novalidate" method="post" >
+										<form class="bd-contact-form" novalidate="novalidate" method="post" onsubmit="sendForm(); reset(); return false;">
 											<div class="bd-form-row two-col">
 												<div class="bd-form-group">
 													<label class="has-white-color" for="name">Your name
@@ -1749,7 +1749,7 @@
 												Sorry something went wrong!
 											</div>
 											<!--Button-->
-											<button class="bd-btn bd-btn--primary" onsubmit="sendForm(); reset(); return false;">
+											<button class="bd-btn bd-btn--primary" >
 												<span class="bd-btn__text">Contact Me</span>
 												<span class="bd-btn__icon bd-btn__icon--right"></span>
 											</button>
