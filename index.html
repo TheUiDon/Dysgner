@@ -1721,7 +1721,8 @@
 											<span class="has-first-color">let's create something iconic together!</span>
 										</h5>
 										<div class="bd-gap-40"></div>
-										<form class="bd-contact-form" novalidate="novalidate" method="post"  onsubmit="sendForm(); reset(); return false;">
+										<!-- Form -->
+										<form class="bd-contact-form" novalidate="novalidate" method="post" onsubmit="sendForm(); reset(); return false;">
 											<div class="bd-form-row two-col">
 												<div class="bd-form-group">
 													<label class="has-white-color" for="name">Your name
@@ -1761,10 +1762,10 @@
 													placeholder="Message"></textarea>
 											</div>
 											<div class="message success" id="success">
-												Your message is successfully sent...
+												<!-- Your message is successfully sent... -->
 											</div>
 											<div class="message danger" id="danger">
-												Sorry something went wrong!
+												<!-- Sorry something went wrong! -->
 											</div>
 											<!--Button-->
 											<button class="bd-btn bd-btn--primary">
@@ -1813,28 +1814,8 @@
 	<script src="assets/scripts/bd-controllers.min.js"></script>
 
 	<script src="assets/scripts/smtp.js"></script>
-	<script  type="text/javascript">
+	<script src="assets/scripts/mail.js"></script>
 
-		function sendForm() {
-			Email.send({
-				SecureToken : "accbcfa2-e166-4836-b4a9-b32dd960df7b",
-				To : 'contact@idris.design, info@idris.design, admin@idris.design',
-				From : document.getElementById("email").value,
-				Subject : "New Message From Idris Design Website!",
-				Body : "Name: " + document.getElementById("name").value +
-				"<br> Email: " + document.getElementById("email").value +
-				"<br> Category: " + document.getElementById("category").value +
-				"<br> Budget: " + document.getElementById("budget").value +
-				"<br> Message: " + document.getElementById("message").value 
-			}).then(
-			message => alert("Your message is successfully sent.")
-			);
-		};
-		
-	</script>
-	
-	<!-- <script src="assets/scripts/mail.js"></script> -->
-	
 </body>
 
 </html>

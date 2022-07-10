@@ -9,7 +9,7 @@ danger.innerHTML = "";
 function sendForm() {
     Email.send({
         SecureToken : "accbcfa2-e166-4836-b4a9-b32dd960df7b",
-        To : 'contact@idris.design, info@idris.design',
+        To : 'contact@idris.design, info@idris.design, admin@idris.design',
         From : document.getElementById("email").value,
         Subject : "New Message From Idris Design Website!",
         Body : "Name: " + document.getElementById("name").value +
