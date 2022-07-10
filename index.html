@@ -162,6 +162,30 @@
 	<link rel="stylesheet" href="assets/css/bd-main.min.css" />
 	<!--Custom-->
 	<link rel="stylesheet" href="assets/css/custom.css" />
+
+
+	<script src="assets/scripts/smtp.js"></script>
+	<script  type="text/javascript">
+
+		function sendForm() {
+			Email.send({
+				SecureToken : "accbcfa2-e166-4836-b4a9-b32dd960df7b",
+				To : 'contact@idris.design, info@idris.design',
+				From : document.getElementById("email").value,
+				Subject : "New Message From Idris Design Website!",
+				Body : "Name: " + document.getElementById("name").value +
+				"<br> Email: " + document.getElementById("email").value +
+				"<br> Category: " + document.getElementById("category").value +
+				"<br> Budget: " + document.getElementById("budget").value +
+				"<br> Message: " + document.getElementById("message").value 
+			}).then(
+			message => alert("Your message is successfully sent.")
+			);
+		};
+		
+	</script>
+
+
 </head>
 
 <body class="animsition">
@@ -1703,7 +1727,7 @@
 											<span class="has-first-color">let's create something iconic together!</span>
 										</h5>
 										<div class="bd-gap-40"></div>
-										<form class="bd-contact-form" novalidate="novalidate" method="post" onsubmit="sendForm(); reset(); return false;">
+										<form class="bd-contact-form" novalidate="novalidate" method="post" >
 											<div class="bd-form-row two-col">
 												<div class="bd-form-group">
 													<label class="has-white-color" for="name">Your name
@@ -1749,7 +1773,7 @@
 												Sorry something went wrong!
 											</div>
 											<!--Button-->
-											<button class="bd-btn bd-btn--primary" >
+											<button class="bd-btn bd-btn--primary" onsubmit="sendForm(); reset(); return false;">
 												<span class="bd-btn__text">Contact Me</span>
 												<span class="bd-btn__icon bd-btn__icon--right"></span>
 											</button>
@@ -1794,8 +1818,9 @@
 	<script src="assets/scripts/bd-helpers.js"></script>
 	<script src="assets/scripts/bd-controllers.min.js"></script>
 
-	<script src="assets/scripts/smtp.js"></script>
-	<script src="assets/scripts/mail.js"></script>
+
+	
+	<!-- <script src="assets/scripts/mail.js"></script> -->
 	
 </body>
 
